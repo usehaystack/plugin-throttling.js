@@ -1,5 +1,4 @@
 {
-  "extends": "@octokit/tsconfig",
   "compilerOptions": {
     "esModuleInterop": true,
     "declaration": true,
@@ -7,7 +6,5 @@
     "emitDeclarationOnly": true,
     "sourceMap": true
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }

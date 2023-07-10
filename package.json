@@ -1,6 +1,6 @@
 {
-  "name": "@octokit/plugin-throttling",
-  "version": "0.0.0-development",
+  "name": "@thellimist/plugin-throttling",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -16,12 +16,12 @@
     "update-endpoints:code": "node scripts/update-endpoints/code",
     "validate:ts": "tsc --noEmit --noImplicitAny --target es2020 --esModuleInterop --moduleResolution node test/typescript-validate.ts"
   },
-  "repository": "github:octokit/plugin-throttling.js",
-  "author": "Simon Grondin (http://github.com/SGrondin)",
+  "repository": "github:usehaystack/plugin-throttling.js",
+  "author": "Haystack Analytics (http://github.com/usehaystack)",
   "license": "MIT",
   "dependencies": {
     "@octokit/types": "^10.0.0",
-    "bottleneck": "^2.15.3"
+    "@thellimist/bottleneck": "^2.19.6"
   },
   "peerDependencies": {
     "@octokit/core": "^4.0.0"
@@ -93,8 +93,5 @@
         }
       ]
     ]
-  },
-  "engines": {
-    "node": ">= 18"
   }
 }

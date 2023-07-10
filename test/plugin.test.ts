@@ -1,4 +1,4 @@
-import Bottleneck from "bottleneck";
+import Bottleneck from "@thellimist/bottleneck";
 import { TestOctokit } from "./octokit";
 import { throttling } from "../src";
 

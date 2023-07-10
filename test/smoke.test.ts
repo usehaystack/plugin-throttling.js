@@ -6,6 +6,6 @@ describe("Smoke test", () => {
   });
 
   it("throttling.VERSION is set", () => {
-    expect(throttling.VERSION).toEqual("0.0.0-development");
+    expect(throttling.VERSION).toEqual("1.0.0");
   });
 });

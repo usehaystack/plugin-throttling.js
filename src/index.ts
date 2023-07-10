@@ -1,5 +1,4 @@
-// @ts-expect-error
-import BottleneckLight from "bottleneck/light";
+import BottleneckLight from "@thellimist/bottleneck/light";
 import { Octokit } from "@octokit/core";
 import type { OctokitOptions } from "@octokit/core/dist-types/types.d";
 import type { Groups, ThrottlingOptions } from "./types";
@@ -15,7 +14,6 @@ const triggersNotification = regex.test.bind(regex);
 
 const groups: Groups = {};
 
-// @ts-expect-error
 const createGroups = function (Bottleneck, common) {
   groups.global = new Bottleneck.Group({
     id: "octokit-global",
@@ -100,7 +98,6 @@ export function throttling(octokit: Octokit, octokitOptions: OctokitOptions) {
     octokit.log.warn("Error in throttling-plugin limit handler", e),
   );
 
-  // @ts-expect-error
   state.retryLimiter.on("failed", async function (error, info) {
     const [state, request, options] = info.args;
     const { pathname } = new URL(options.url, "http://github.test");

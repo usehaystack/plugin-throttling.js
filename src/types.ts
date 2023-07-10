@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/core";
-import Bottleneck from "bottleneck";
+import Bottleneck from "@thellimist/bottleneck";
 
 type LimitHandler = (
   retryAfter: number,

@@ -107,7 +107,7 @@ npm install --save ioredis
 Then in your application:
 
 ```js
-const Bottleneck = require("bottleneck");
+const Bottleneck = require("@thellimist/bottleneck");
 const Redis = require("redis");
 
 const client = Redis.createClient({
